@@ -47,5 +47,13 @@ def run(filename):
     reflect = '.white'
 
     print symbols
+
+    systems = [tmp]
     for command in commands:
         print command
+        if command == 'push':
+            systems.append( [x[:] for x in systems[-1]] )
+        elif command == 'pop':
+            systems.pop()
+        elif command == 'move'
+            
