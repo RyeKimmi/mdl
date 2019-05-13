@@ -51,9 +51,27 @@ def run(filename):
     systems = [tmp]
     for command in commands:
         print command
-        if command == 'push':
+        if command == 'push''':
             systems.append( [x[:] for x in systems[-1]] )
-        elif command == 'pop':
+        elif command == 'pop''':
             systems.pop()
-        elif command == 'move'
-            
+        elif command == 'move':
+            pass
+        elif command == 'scale':
+            pass
+        elif command == 'rotate':
+            pass
+        elif command == 'box':
+            pass
+        elif command == 'sphere':
+            pass
+        elif command == 'torus':
+            pass
+        elif command == 'constants''':
+            pass
+        elif command == 'line':
+            pass
+        elif command == 'save':
+            pass
+        elif command == 'display':
+            pass
