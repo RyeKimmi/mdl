@@ -56,7 +56,7 @@ def run(filename):
         elif command == 'pop''':
             systems.pop()
         elif command == 'move':
-            pass
+            for 
         elif command == 'scale':
             pass
         elif command == 'rotate':
