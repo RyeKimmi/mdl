@@ -56,7 +56,11 @@ def run(filename):
         elif command == 'pop''':
             systems.pop()
         elif command == 'move':
-            for 
+            #pass 'move 2 3 4 <other>'
+            t = make_translate(float(args[0]), float(args[1]), float(args[2]))
+            matrix_mult( systems[-1], t )
+            systems[-1] = [ x[:] for x in t]
+            #insert command for <args[3]>
         elif command == 'scale':
             pass
         elif command == 'rotate':
